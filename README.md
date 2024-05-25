@@ -1,6 +1,6 @@
 proweb_nathalydiaz
 ===============
-#### Evaluacion Nro. 1 GitHub
+### Evaluacion Nro. 1 GitHub
 ----------
 * **Crear tres branchs: main, staging, develop.**
 Primero se crea el repositorio en GitHub y se abre la terminal, se clona el repositorio ya creado y se accede a la carpeta creada con el nombre del repositorio.
