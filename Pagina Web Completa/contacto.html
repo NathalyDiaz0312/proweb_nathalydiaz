@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Central Express</title>
+    <link rel="stylesheet" href="Css/Styles.css">
+    <link rel="stylesheet" href="Css/header&footer.css">
+    <script>
+        function data(){
+            var n= document.getElementById("nombre").value;
+            var a= document.getElementById("apellido").value;
+            var c= document.getElementById("correo").value;
+            var t= document.getElementById("tlf").value;
+            var m= document.getElementById("msj").value;
+            if(n=="" || a=="" || c==""|| t==""||m==""){
+                alert("los campos estan vacios");
+            }else{
+                var data="Nombre: "+n+"<br>"+"Apellido: "+a+"<br>"+"Correo: "+c+"<br>"+"Telefono: "+t+"<br>"+"Mensaje: "+m+"<br>"+"<button id='button2' type='submit'>Enviar</button>";
+                document.getElementById("preview").innerHTML=data;
+            }
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <header >
+        <ul id="nav">
+            <li style="color: #ca39b2">|</li>
+            <li><a href="index.html">Inicio</a></li>
+            <li style="color: #ca39b2">|</li>
+            <li><a href="productos.html">Productos</a></li>
+            <li style="color: #ca39b2">|</li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li style="color: #ca39b2">|</li>
+            <li><a href="mision.html">Misión</a></li>
+            <li style="color: #ca39b2">|</li>
+            <li><a href="vision.html">Visión</a></li>
+            <li style="color: #ca39b2">|</li>
+        </ul>
+    </header>
+    <div class="container"style="margin-top: 20px;" >
+        <div id="form_container">
+            <form action="#" id="data_form" onsubmit="data();">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido">
+                <label for="correo">correo:</label>
+                <input type="text" id="correo">
+                <label for="tlf">Telefono:</label>
+                <input type="text" id="tlf">
+                <label for="msj">Mensaje:</label>
+                <textarea id="msj" cols="30" rows="5" placeholder="Ingrese su mensaje..."></textarea>
+            
+                <button type="submit" id="button1">Pre-visualisar</button>
+            </form>
+        </div>
+        <div id="previews">
+            <h4>Datos a confirmar:</h4>
+        <p id="preview"></p>
+        </div>
+        <footer class="footerall">
+                <table>
+                    <tr>
+                        <th scope="row" style="color: #ca39b2;">Realizado por:</th>
+                        <td>Nathaly Diaz</td>
+                        <td id="nav1">Siguenos en</td>
+                        <td style="color:rgba(255, 255, 255, 0)">i</td>
+                        <td>
+                            <img id="icon" alt="Faceebook" src="C:\Users\frfh1.SAMSUNG-PC\Desktop\proyecto programacion Nuevo\img\logo_de_facebook.png">
+                        </td>
+                        <td style="color:rgba(255, 255, 255, 0)">i</td>
+                        <td>e</td>
+                        <td style="color:rgba(255, 255, 255, 0)">i</td>
+                        <td>
+                            <img id="icon" alt="Instagram" src="C:\Users\frfh1.SAMSUNG-PC\Desktop\proyecto programacion Nuevo\img\logo_de_instgram.png">
+                        </td>
+                        <td style="color:rgba(255, 255, 255, 0)">i</td>
+                        <td>como: Rymarge Makeup</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>28.314.245</td>
+                    </tr>
+                    <tr>
+                    </tr>
+                </table>
+            </footer>
+        </div>
+    </body>
+    </html>
