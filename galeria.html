@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Central Express</title>
+    <link rel="stylesheet" href="Css/Styles.css">
+    <link rel="stylesheet" href="Css/header&footer.css">
+    <script>
+        function fullsize(img){
+            var full= document.getElementById("fullsize");
+            switch(img){
+                case 1:
+                    var image= "<img src='img/pagina_marga_foto_1.png' width='600px' height='600px'>";
+                break;
+                case 2:
+                    var image= "<img src='img/pagina_marga_foto_2.png' width='600px'height='600px'>";
+                break;
+                case 3:
+                    var image= "<img src='img/pagina_marga_foto_3.png' width='600px'height='600px'>";
+                break;
+                case 4:
+                    var image= "<img src='img/pagina_marga_foto_4.png' width='600px'height='600px'>";
+                break;
+                default:
+                    empty;
+                break;
+            }
+            full.innerHTML=image;
+        }
+    </script>
+</head>
+<body>
+    <header >
+        <ul id="nav">
+            <li style="color: #ca39b2">|</li>
+            <li><a href="index.html">Inicio</a></li>
+            <li style="color: #ca39b2">|</li>
+            <li><a href="productos.html">Productos</a></li>
+            <li style="color: #ca39b2">|</li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li style="color: #ca39b2">|</li>
+            <li><a href="mision.html">Misión</a></li>
+            <li style="color: #ca39b2">|</li>
+            <li><a href="vision.html">Visión</a></li>
+            <li style="color: #ca39b2">|</li>
+        </ul>
+    </header>
+    <div class="container"style="margin-top: 20px;" >
+        <section id="gallery">
+            <article id="Agallery" >
+                <table>
+                    <tr>
+                        <td><a href="#" onclick="fullsize(1);"><img src="img/pagina_marga_foto_1.png" alt="burger" width="250px"></a></td>
+                        <td><a href="#" onclick="fullsize(2);"><img src="img/pagina_marga_foto_2.png" alt="hotdog" width="250px"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" onclick="fullsize(3);"><img src="img/pagina_marga_foto_3.png" alt="pizza" width="250px"></a></td>
+                        <td><a href="#" onclick="fullsize(4);"><img src="img/pagina_marga_foto_4.png" alt="shawarma" width="250px"></a></td>
+
+                    </tr>
+                </table>
+            </article>
+            <article  id="fullsize"></article>
+        </section>
+    <footer class="footerall">
+            <table>
+                <tr>
+                    <th scope="row" style="color: #ca39b2;">Realizado por:</th>
+                    <td>Nathaly Diaz</td>
+                    <td id="nav1">Siguenos en</td>
+                    <td style="color:rgba(255, 255, 255, 0)">i</td>
+                    <td>
+                        <img id="icon" alt="Faceebook" src="C:\Users\frfh1.SAMSUNG-PC\Desktop\proyecto programacion Nuevo\img\logo_de_facebook.png">
+                    </td>
+                    <td style="color:rgba(255, 255, 255, 0)">i</td>
+                    <td>e</td>
+                    <td style="color:rgba(255, 255, 255, 0)">i</td>
+                    <td>
+                        <img id="icon" alt="Instagram" src="C:\Users\frfh1.SAMSUNG-PC\Desktop\proyecto programacion Nuevo\img\logo_de_instgram.png">
+                    </td>
+                    <td style="color:rgba(255, 255, 255, 0)">i</td>
+                    <td>como: Rymarge Makeup</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>28.314.245</td>
+                </tr>
+                <tr>
+                </tr>
+            </table>
+        </footer>
+        </div>
+    </body>
+</html>

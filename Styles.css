@@ -1,0 +1,85 @@
+
+/* productos */
+#icon{
+    height: 15px;
+    width: 15px;
+}
+#productos{
+    background:#cb56e2;
+    margin-right: 50px;
+    margin-left: 50px; 
+    padding: 1em; 
+    margin-bottom: 80px;
+    border-radius: 10px;
+    display: table;
+}
+.producto{
+    display: table-cell;
+    width: 20%; 
+    padding: 2em;
+}
+.producto__imagen{
+    width: 60%;
+    align-content: center;
+}
+.producto__titulo{
+    color: rgba(255, 255, 255, 0.623);
+    font-size: 18px;
+}
+/* end productos */
+/* mision vision */
+#mision,#vision{
+    background: #cb56e2;
+    margin: 90px 50px 0 50px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+/* end mision vision */
+/* gallery */
+#gallery{
+    margin: 0 50px 0 50px;
+}
+#Agallery{
+    display: inline-block;
+    background: #cb56e2;
+    padding: 30px;
+    border-radius: 10px;
+}
+#fullsize{
+    display: inline-block;
+    margin: 30px 30px 30px 30px;
+}
+/* end gallery */
+/* contacto */
+#data_form,label{
+    padding: 10px 0;
+}
+#data_form>label,input,textarea,#button1{
+    display: block;
+    width: 50%;
+    margin-left: 100px;
+}
+#button1{
+    margin-top: 5px;
+}
+#form_container{
+    width: 80%;
+    margin: 0 0 30px 100px;
+    background: #cb56e2;
+    border-radius: 10px;
+}
+#preview,#previews{
+    width: 77%;
+    margin: 0 0 30px 100px;
+    padding: 20px;
+    background: #cb56e2;
+    border-radius: 10px;
+}
+#button2{
+    width: 100px;
+    margin-top: 10px;
+    padding: 5px;
+}
+/* end contacto */
